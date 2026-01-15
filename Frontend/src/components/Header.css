@@ -1,0 +1,80 @@
+.div1{
+    background-color: #2699fb;
+    padding: 16px;
+}
+.div2{
+    max-width: 1240px;
+    border: black 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headbtn1 {
+    padding: 10px 80px;
+    background-color: #123456;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font: italic;
+}
+.headbtn {
+    padding: 10px 20px;
+    background-color: #123456;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font: italic;
+}
+
+.h2{
+    font: bold;
+    color: blueviolet;
+}
+.logo {
+    padding: 10px 20px;
+    background-color: #09d9ec;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.div3{
+    font: bold;
+    
+}
+
+.ai {
+    text-decoration: white;
+    color: white;
+    
+}
+@media (min-width: 768px) { .ai { display: none; }
+}
+
+.ul { display: flex; 
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) { .ul { display: none; }
+}
+
+.ul2 {
+    position: fixed;
+    background-color: black;
+    left: 0px;
+    list-style-type: none;
+    justify-content: space-between;
+    top: 92px;
+    width: 50%;
+    height: 100vh;
+    
+}
+.m2{
+    padding: 15px;
+    width: 100%;
+    max-height: fit-content;
+}
+@media (min-width: 768px) { .ul2 { display: none; }
+}

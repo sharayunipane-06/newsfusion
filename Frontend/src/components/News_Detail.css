@@ -1,0 +1,160 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Container for the news article */
+  .news-container2 {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  /* Title and subtitle styling */
+  .news-title2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1a73e8;
+  }
+  
+  .news-subtitle2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* Image styling */
+  .news-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .news-image2 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Ensure large images scale down to fit */
+  .news-image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Paragraph content styling */
+  .news-paragraph2 {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #444;
+    text-align: justify; /* Ensures proper text alignment */
+    word-wrap: break-word; /* Prevents long words or links from breaking layout */
+  }
+  
+  /* Publish time styling */
+  .publish-time2 {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: right;
+  }
+  
+  /* Loading and error messages */
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    padding: 20px;
+  }
+  .error {
+    color: #e53935;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .news-container2 {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .news-title2 {
+      font-size: 1.5rem;
+    }
+  
+    .news-subtitle2 {
+      font-size: 1rem;
+    }
+  
+    .news-paragraph2 {
+      font-size: 0.95rem;
+    }
+  
+    .publish-time2 {
+      font-size: 0.85rem;
+    }
+  }
+  
+  .loading-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust height based on your layout */
+  }
+  
+  .loading-spinner1 {
+    border: 8px solid #f3f3f3; /* Light gray */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #007bff; /* Customize spinner color here */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+    

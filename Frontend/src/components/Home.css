@@ -1,0 +1,92 @@
+/* General styles for the Home component */
+.home-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Headline Marquee Styling */
+.headline-marquee {
+    margin: 10px 0;
+    background: linear-gradient(90deg, #2c3e50, #34495e); /* Gradient background */
+    border: 1px solid #f1c40f; /* Yellow border to complement headlines */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .marquee {
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap; /* Smooth scrolling */
+  }
+  
+  .breaking-news {
+    color: #e74c3c; /* Vibrant red for "Breaking News" */
+    margin-right: 15px; /* Space between "Breaking News" and the headlines */
+    font-weight: bold;
+  }
+  
+  .marquee .headline {
+    color: #f1c40f; /* Bright yellow for headlines */
+    margin-right: 50px; /* Space between headlines */
+  }
+  
+  
+  
+
+  
+
+/* Categories container */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+/* Individual category styles */
+.category {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the content */
+}
+
+/* Category title styling */
+.category h3 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+/* Larger image styling */
+.category img {
+    width: 300px; /* Set image width */
+    height: 300px; /* Set image height */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 120px;
+    margin-top: 5px;
+}
+
+/* Category description */
+.category p {
+    font-size: 16px; /* Slightly larger text */
+    color: #666;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: 1fr; /* Stack categories on small screens */
+    }
+
+    .category img {
+        width: 180px; /* Adjust image size for smaller screens */
+        height: 180px;
+    }
+}
